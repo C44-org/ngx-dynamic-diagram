@@ -1,0 +1,33 @@
+{
+  "name": "@c44/ngx-dynamic-diagram",
+  "version": "0.0.1",
+  "description": "Create diagrams dynamically.",
+  "license": "MIT",
+  "author": {
+    "name": "C44"
+  },
+  "keywords": [
+    "angular",
+    "charts",
+    "tailwindcss"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "angular-plotly.js": "^5.2.2",
+    "plotly.js": "^2.32.0",
+    "plotly.js-dist-min": "^2.32.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/C44-org/ngx-dynamic-diagram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/C44-org/ngx-dynamic-diagram/issues"
+  },
+  "homepage": "https://github.com/C44-org/ngx-dynamic-diagram#readme",
+  "sideEffects": false
+}

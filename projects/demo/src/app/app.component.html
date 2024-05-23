@@ -1,0 +1,56 @@
+<div class="overflow-hidden p-4 pb-0">
+  <div class="flex flex-col h-full overflow-y-auto scrollbar-hide">
+      <div class="flex flex-row p-4 justify-between bg-primary border-b border-borderline rounded-t-lg z-10">
+          <div>
+              <h2 class="text-darker text-2xl font-bold">Alternative 2</h2>
+              <p class="text-sm text-dark">Es wird ein Diagramm angezeigt.</p>
+          </div>
+          <!-- <div>
+              <button class="w-10 h-10 m-2 bg-secondary text-accent shadow-inner rounded-full cursor-pointer"
+                  (click)="createPosition()">
+                  <icons class="w-8 h-8 stroke-1 stroke-current" name="add"></icons>
+              </button>
+          </div> -->
+      </div>
+
+      <!-- <div class="relative flex-auto w-full overflow-auto">
+          @defer (when isVisible; prefetch on timer(1000ms)) {
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-tertiary">
+                  <ngx-dynamic-diagram [traces]="trace1" [diagram]="diagram1"></ngx-dynamic-diagram>
+                  <ngx-dynamic-diagram [traces]="trace2" [diagram]="diagram2"></ngx-dynamic-diagram>
+                  <ngx-dynamic-diagram [traces]="trace3" [diagram]="diagram3"></ngx-dynamic-diagram>
+                  <ngx-dynamic-diagram [traces]="trace4" [diagram]="diagram4"></ngx-dynamic-diagram>
+                  <ngx-dynamic-diagram [traces]="trace5" [diagram]="diagram5"></ngx-dynamic-diagram>
+                  <ngx-dynamic-diagram [traces]="trace6" [diagram]="diagram6"></ngx-dynamic-diagram>
+                  <ngx-dynamic-diagram [traces]="trace7" [diagram]="diagram7"></ngx-dynamic-diagram>
+                  <ngx-dynamic-diagram [traces]="trace8" [diagram]="diagram8"></ngx-dynamic-diagram>
+                  <ngx-dynamic-diagram [traces]="trace9" [diagram]="diagram9"></ngx-dynamic-diagram>
+              </div>
+          }
+          @placeholder (minimum 100ms) {
+              <div class="flex w-full p-2 bg-tertiary justify-center" *ngIf="isSpinnerVisible">
+                  <circular-spinner></circular-spinner>
+                  <div class="w-8 h-8 fill-blue-600 text-gray-200 animate-spin">
+                  Placeholder
+                      <icons class="" name="spinner"></icons>
+                  </div>
+                  <span class="sr-only">Loading...</span>
+              </div>
+          }
+          @loading (after 100ms; minimum 150ms) {
+              <div class="h-4 bg-tertiary">Loading</div>
+          }
+          @error {
+              <div class="h-4 bg-tertiary">Error</div>
+          }
+          <div class="debug-item-hide bg-tertiary text-dark border-t border-borderline">
+            <pre class="p-4 bg-gradient-45 to-gray-600">{{ (data$ | async) | json }}</pre>
+          </div>
+          <div class="h-4 bg-tertiary border-t border-borderline rounded-b-lg"></div>
+        </div> -->
+
+        <div class="relative flex-auto w-full bg-primary overflow-auto">
+          <dashboard1></dashboard1>
+        </div>
+  </div>
+</div>

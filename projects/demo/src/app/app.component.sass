@@ -1,0 +1,46 @@
+.col
+    background-color: red
+
+// progressgauge
+.progress__svg
+    transform: rotate(-90deg)
+
+.progress__text
+    @apply fill-accent text-accent
+    font-size: 1.5rem
+    // stroke: #3978d6
+    stroke-width: 1px
+
+.progress__meter,
+.progress__value
+    fill: none
+
+.progress__meter
+    @apply stroke-current text-static_gray
+    // stroke: #9b9b9b
+    stroke-width: 4px
+
+.progress__value
+    @apply stroke-current text-accent
+    // stroke: #3978d6
+    stroke-width: 4px
+    transition: stroke-dashoffset 0.5s linear
+
+// progessbar
+.ProgressBar
+    display: block
+    width: 100%
+    height: 4px
+
+.ProgressBar-background,
+.ProgressBar-percentage
+    @apply fill-current 
+    // fill: #3978d6 text-blue-600
+  
+
+.ProgressBar-background
+    fill-opacity: 0.2
+
+.ProgressBar-percentage
+    fill-opacity: 0.9
+    transition: stroke-dashoffset 0.5s linear

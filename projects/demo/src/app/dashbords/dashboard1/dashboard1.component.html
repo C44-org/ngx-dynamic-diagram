@@ -1,0 +1,90 @@
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-2 p-2">
+    <div class="relative h-80 bg-tertiary rounded-lg p-2" #diagram_placeholder>
+        <div class="flex flex-row justify-between" #header>
+            <div class="">
+                <div class="flex flex-row h6 items-center">
+                    <div class="h-4 w-4 mr-2">
+                        <dashboard-icons name="chart"></dashboard-icons>
+                    </div>
+                    <h2 class="text-darker text-md">Grant amount ratio<span class="text-gray-500">/ %</span></h2>
+                </div>
+                <p class="text-gray-500 text-sm">Track and report on specific grant ratio</p>
+            </div>
+            <button class="grid place-content-center h-8 w-8 bg-secondary border border-borderline rounded-lg">
+                <div class="h-6 w-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                </div>
+            </button>
+        </div>
+        <div class="absolute top-16 right-2 bottom-2 left-2 bg-secondary border border-borderline rounded">
+            <ngx-dynamic-diagram [traces]="trace" [diagram]="diagram" [height]="260" class=""></ngx-dynamic-diagram>
+        </div>
+    </div>
+    <div class="relative h-80 bg-tertiary rounded-lg p-2" #diagram_placeholder>
+        <div class="flex flex-row justify-between" #header>
+            <div class="">
+                <div class="flex flex-row h6 items-center">
+                    <div class="h-4 w-4 mr-2">
+                        <dashboard-icons name="chart"></dashboard-icons>
+                    </div>
+                    <h2 class="text-darker text-md">Committed and actual balance<span class="text-gray-500">/ $M</span></h2>
+                </div>
+                <p class="text-gray-500 text-sm">Presents funds reserved for specific purposes</p>
+            </div>
+            <button class="grid place-content-center h-8 w-8 bg-secondary border border-borderline rounded-lg">
+                <div class="h-6 w-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                </div>
+            </button>
+        </div>
+        <div class="absolute top-16 right-2 bottom-2 left-2 bg-secondary border border-borderline rounded">
+            <ngx-dynamic-diagram [traces]="bars" [diagram]="barchart" [height]="260" class=""></ngx-dynamic-diagram>
+        </div>
+    </div>
+
+    <!-- linechart - vertical -->
+    <div class="relative h-80 bg-tertiary rounded-lg p-2" #diagram_placeholder>
+        <div class="flex flex-row justify-between" #header>
+            <div class="">
+                <div class="flex flex-row h6 items-center">
+                    <div class="h-4 w-4 mr-2">
+                        <dashboard-icons name="chart"></dashboard-icons>
+                    </div>
+                    <h2 class="text-darker text-md">Committed and actual balance<span class="text-gray-500">/ $M</span></h2>
+                </div>
+                <p class="text-gray-500 text-sm">Presents funds reserved for specific purposes</p>
+            </div>
+            <button class="grid place-content-center h-8 w-8 bg-secondary border border-borderline rounded-lg">
+                <div class="h-6 w-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                </div>
+            </button>
+        </div>
+        <div class="absolute top-16 right-2 bottom-2 left-2 bg-secondary border border-borderline rounded">
+            <ngx-dynamic-diagram [traces]="line" [diagram]="linechart" [height]="260" class=""></ngx-dynamic-diagram>
+        </div>
+    </div>
+
+    <!-- sunburst -->
+    <div class="relative h-192 bg-tertiary rounded-lg p-2 col-span-2 row-span-2" #diagram_placeholder>
+        <div class="flex flex-row justify-between" #header>
+            <div class="">
+                <div class="flex flex-row h6 items-center">
+                    <div class="h-4 w-4 mr-2">
+                        <dashboard-icons name="chart"></dashboard-icons>
+                    </div>
+                    <h2 class="text-darker text-md">Committed and actual balance<span class="text-gray-500">/ $M</span></h2>
+                </div>
+                <p class="text-gray-500 text-sm">Presents funds reserved for specific purposes</p>
+            </div>
+            <button class="grid place-content-center h-8 w-8 bg-secondary border border-borderline rounded-lg">
+                <div class="h-6 w-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                </div>
+            </button>
+        </div>
+        <div class="absolute top-16 right-2 bottom-2 left-2 bg-secondary border border-borderline rounded">
+            <ngx-dynamic-diagram [traces]="sun" [diagram]="sunburst" [height]="720" class=""></ngx-dynamic-diagram>
+        </div>
+    </div>
+</div>

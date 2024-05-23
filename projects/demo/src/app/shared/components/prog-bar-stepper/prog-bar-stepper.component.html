@@ -1,0 +1,23 @@
+<div class="flex flex-col h-64 w-64 p-4 bg-white rounded shadow-lg">
+    <span class="mt-10 text-center text-lg font-bold">Select the price</span>
+    <div class="relative h-16 p-[2px] bg-primary rounded">
+        <!-- bar progress line -->
+        <div class="h-full w-full bg-white rounded" [ngStyle]="{ 'width': calcValueInPercent() + '%' }"></div>
+        <!-- value -->
+        <div class="grid place-content-center absolute top-0 right-0 bottom-0 left-0 text-static_gray">
+            <span class="text-bold text-3xl">{{ value }} {{ elementtype }}</span>
+        </div>
+        <!-- sub -->
+        <button class="absolute top-0 left-0 w-16 h-16 p-4 stroke-[2px] text-static_gray" (click)="decrease(step)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /></svg>
+        </button>
+        <!-- add -->
+        <button class="absolute top-0 right-0 w-16 h-16 p-4 stroke-2 text-static_gray" (click)="increase(step)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+        </button>
+    </div>
+    <div class="flex flex-row justify-between text-xs text-label">
+        <span>{{ min }} {{ elementtype }}</span>
+        <span>{{ max }} {{ elementtype }}</span>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="grid place-content-center h-screen w-full bg-tertiary">
+
+    <form [formGroup]="progressBarForm">
+        <div class="form-group">
+            <input class="form-control" formControlName="text" />
+            <prog-bar-stepper class="form-control" formControlName="progressBar"></prog-bar-stepper>
+            <!-- <prog-bar-stepper class="form-control" formControlName="dynProgressBar" [elementtype]="'$'" [min]="359" [max]="1540" [step]="30"></prog-bar-stepper> -->
+        </div>
+    </form>
+    <br>
+    <div class="h-12 w-96">
+        <svg class="ProgressBar">
+            <rect class="ProgressBar-background" width="100%" height="100%" />
+            <rect class="ProgressBar-percentage" [ngClass]="{'text-blue-600': color == 1, 'text-yellow-300' : color == 2, 'text-red-300': color == 3 }" attr.width="{{ percent }}%" height="100%" />
+        </svg>
+    </div>
+    <!-- <br>
+    <svg class="progress__svg w-20 h-20" viewBox="0 0 120 120">
+        <circle [attr.r]="radius" cx="60" cy="60" class="progress__meter"></circle>
+        <circle [style.strokeDasharray]="circumference" [style.strokeDashoffset]="dashoffset" [attr.r]="radius" cx="60" cy="60" class="progress__value"></circle>
+        <text class="progress__text" x="50%" y="55%" text-anchor="middle" transform="rotate(90, 60, 60)">{{ value }} %</text>
+    </svg> -->
+    <br>
+</div>
+
+<pre>{{ progressBarForm.value | json }}</pre>
