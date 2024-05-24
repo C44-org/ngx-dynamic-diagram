@@ -1,11 +1,10 @@
 {
-  "name": "@christophhu/ngx-dynamic-diagram",
+  "name": "@c44/ngx-dynamic-diagram",
   "version": "0.0.1",
   "description": "Create diagrams dynamically.",
   "license": "MIT",
   "author": {
-    "name": "Christoph Huschenhöfer",
-    "email": "christoph@nxt.codes"
+    "name": "C44"
   },
   "keywords": [
     "angular",
@@ -24,11 +23,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/christophhu/ngx-dynamic-diagram.git"
+    "url": "https://github.com/c44-org/ngx-dynamic-diagram.git"
   },
   "bugs": {
-    "url": "https://github.com/christophhu/ngx-dynamic-diagram/issues"
+    "url": "https://github.com/c44-org/ngx-dynamic-diagram/issues"
   },
-  "homepage": "https://github.com/christophhu/ngx-dynamic-diagram#readme",
+  "homepage": "https://github.com/c44-org/ngx-dynamic-diagram#readme",
   "sideEffects": false
 }

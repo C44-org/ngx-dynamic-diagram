@@ -3,7 +3,7 @@
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 
 ## Demo
-[https://christophhu.github.io/angular-tailwind-dashboard/](https://christophhu.github.io/ngx-dynamic-diagram/)
+[https://christophhu.github.io/angular-tailwind-dashboard/](https://c44-org.github.io/ngx-dynamic-diagram/)
 
 ## Code scaffolding
 
